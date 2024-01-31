@@ -1,0 +1,20 @@
+name: Env set
+description: Set environment variable in GitHub Actions
+
+author: Konstantin Chukhlomin <mail@chuhlomin.com>
+
+branding:
+  icon: chevrons-right
+  color: purple
+
+inputs:
+  name:
+    description: Environment variable name
+    required: true
+  value:
+    description: Environment variable value
+    required: true
+
+runs:
+  using: docker
+  image: docker://ghcr.io/alsosee/envset:latest
