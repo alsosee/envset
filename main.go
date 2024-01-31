@@ -27,7 +27,7 @@ func run() error {
 		return fmt.Errorf("value is required")
 	}
 
-	return nil
+	return writeEnv(name, value)
 }
 
 func writeEnv(name, value string) error {
