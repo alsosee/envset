@@ -1,4 +1,4 @@
-# setenv GitHub Action
+# envset GitHub Action
 
 Perform an operation with objects in Cloudflare R2 bucket
 
