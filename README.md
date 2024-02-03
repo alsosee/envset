@@ -1,9 +1,12 @@
 # envset GitHub Action
 
+[![main](https://github.com/alsosee/envset/actions/workflows/main.yml/badge.svg)](https://github.com/alsosee/envset/actions/workflows/main.yml)
+[![release](https://github.com/alsosee/envset/actions/workflows/release.yml/badge.svg)](https://github.com/alsosee/envset/actions/workflows/release.yml)
+
 This action sets an environment variable in GitHub Actions workflow.
 It is useful when you want to set an environment variable that may contain double or single quotes, and you don't know the value in advance.
 
-Action writes into a `GITHUB_ENV` file, so the environment variable will be available in the next steps of the same job.
+Action writes into a `GITHUB_ENV` file, so the environment variable will be available in the next steps of the same job. It's equivalent to `echo "SOME_VARIABLE=$SOME_VALUE" >> $GITHUB_ENV`, but less error-prone in case value contains quotes.
 
 This is a Docker-based action, so it may not work on Windows and MacOS runners.
 
