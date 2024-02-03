@@ -17,4 +17,4 @@ inputs:
 
 runs:
   using: docker
-  image: docker://ghcr.io/alsosee/envset:latest
+  image: docker://ghcr.io/alsosee/envset:v1.1
